@@ -325,7 +325,10 @@ The `addons_config` block supports:
 
 * `kubernetes_dashboard` - (Optional) The status of the Kubernetes Dashboard
     add-on, which controls whether the Kubernetes Dashboard is enabled for this cluster.
-    It is enabled by default; set `disabled = true` to disable.
+    It is enabled by default; set `disabled = true` to disable. Starting with GKE v1.15, 
+    you will no longer be able to enable the Kubernetes Dashboard by using the add-on API. 
+    You will still be able to install Kubernetes Dashboard manually by following the instructions
+    in the project's repository.
 
 * `network_policy_config` - (Optional) Whether we should enable the network policy addon
     for the master.  This must be enabled in order to enable network policy for the nodes.
